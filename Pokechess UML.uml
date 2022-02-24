@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>game</OriginalElement>
+  <nodes>
+    <node x="426.190324858757" y="3530.0">game.Controller</node>
+    <node x="426.54555084745743" y="2322.0">game.Game</node>
+    <node x="1057.3078338778846" y="2091.0">game.Pokemon</node>
+    <node x="418.7372881355931" y="3948.0">game.Controller.GameListener</node>
+    <node x="27.0" y="2234.0">game.View</node>
+    <node x="339.5" y="1936.0">game.Board</node>
+    <node x="542.0" y="1550.0">game.Player</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="game.Controller" target="game.Pokemon" relationship="DEPENDENCY">
+      <point x="126.03601624308044" y="-62.06173813792657" />
+      <point x="1097.846153846154" y="3650.9382618620734" />
+      <point x="1097.846153846154" y="3567.293139293139" />
+      <point x="1057.308" y="3567.293139293139" />
+      <point x="-103.99983387788461" y="-530.5" />
+    </edge>
+    <edge source="game.Controller" target="game.Player" relationship="DEPENDENCY">
+      <point x="126.99967514124307" y="0.0" />
+      <point x="1282.808" y="3713.0" />
+      <point x="1282.808" y="1584.1669094086803" />
+      <point x="750.3303424198907" y="1584.1669094086803" />
+      <point x="103.33034241989071" y="-137.71832216720077" />
+    </edge>
+    <edge source="game.Controller" target="game.Game" relationship="DEPENDENCY">
+      <point x="-50.30783359166304" y="-182.9448580544872" />
+      <point x="502.05945273318247" y="3530.055141945513" />
+      <point x="-140.98609811427497" y="515.3689765196759" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Pokemon" relationship="DEPENDENCY">
+      <point x="116.76125483730141" y="-7.633518776077835" />
+      <point x="653.4985429728945" y="3981.0724748034954" />
+      <point x="1149.9320137309744" y="3981.0724748034954" />
+      <point x="1149.9320137309744" y="2304.5" />
+      <point x="-103.99983387788461" y="-530.5" />
+    </edge>
+    <edge source="game.Game" target="game.Pokemon" relationship="TO_ONE">
+      <point x="4.491525426146836E-4" y="513.0" />
+      <point x="643.046" y="3096.0009466708743" />
+      <point x="1057.308" y="3096.0009466708743" />
+      <point x="-103.99983387788461" y="0.0" />
+    </edge>
+    <edge source="game.Player" target="game.Pokemon" relationship="TO_ONE">
+      <point x="105.0" y="0.0" />
+      <point x="966.7461443721772" y="1711.0" />
+      <point x="966.7461443721772" y="2129.5405312855733" />
+      <point x="1057.308" y="2129.5405312855733" />
+      <point x="-103.99983387788461" y="-66.66632942128717" />
+    </edge>
+    <edge source="game.View" target="game.Pokemon" relationship="DEPENDENCY">
+      <point x="140.5" y="-557.6322107246951" />
+      <point x="1057.308" y="2277.367789275305" />
+      <point x="-103.99983387788461" y="-530.5" />
+    </edge>
+    <edge source="game.Controller" target="game.Game" relationship="TO_ONE">
+      <point x="-15.000324858756926" y="-183.0" />
+      <point x="-104.85555084745738" y="513.0" />
+    </edge>
+    <edge source="game.Controller" target="game.Controller.GameListener" relationship="CREATE">
+      <point x="-46.453324858757014" y="183.0" />
+      <point x="-30.00028813559311" y="-39.5" />
+    </edge>
+    <edge source="game.Game" target="game.Player" relationship="TO_ONE">
+      <point x="33.954449152542566" y="-513.0" />
+      <point x="718.4503383270783" y="2322.0" />
+      <point x="718.4503383270783" y="1872.0" />
+      <point x="30.0" y="161.0" />
+    </edge>
+    <edge source="game.Controller" target="game.View" relationship="TO_ONE">
+      <point x="-89.30356069965529" y="-180.45152846456403" />
+      <point x="463.8867641591017" y="3395.7631136830314" />
+      <point x="308.0" y="3395.7631136830314" />
+      <point x="140.5" y="-30.0" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Game" relationship="DEPENDENCY">
+      <point x="118.40733190512435" y="-25.740366522130444" />
+      <point x="748.1479743727145" y="3961.7596334778696" />
+      <point x="105.10242352525711" y="509.31219831465296" />
+    </edge>
+    <edge source="game.Controller" target="game.View" relationship="DEPENDENCY">
+      <point x="-127.00032485875698" y="-15.0" />
+      <point x="289.08425789357807" y="3698.0" />
+      <point x="121.58425789357807" y="597.8201663201662" />
+    </edge>
+    <edge source="game.Game" target="game.Board" relationship="TO_ONE">
+      <point x="-155.04555084745743" y="-513.0" />
+      <point x="0.0" y="117.0" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.View" relationship="DEPENDENCY">
+      <point x="-118.00028813559305" y="-15.0" />
+      <point x="244.92934537399498" y="3972.5" />
+      <point x="244.92934537399498" y="3435.6901492537313" />
+      <point x="95.08945997875912" y="600.6901492537313" />
+    </edge>
+    <edge source="game.Board" target="game.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-117.0" />
+      <point x="488.0" y="1899.0617687965312" />
+      <point x="578.2650184851375" y="1899.0617687965312" />
+      <point x="-68.73498151486251" y="157.2027479703338" />
+    </edge>
+    <edge source="game.Board" target="game.Pokemon" relationship="DEPENDENCY">
+      <point x="147.5749497212646" y="25.65264463300491" />
+      <point x="835.6807977412375" y="2078.652644633005" />
+      <point x="835.6807977412375" y="2152.2378712263762" />
+      <point x="1051.1649017762006" y="2152.2378712263762" />
+      <point x="1051.1649017762006" y="2152.2547747897415" />
+      <point x="-106.41170476038906" y="-682.7452252102585" />
+    </edge>
+    <edge source="game.Player" target="game.Pokemon" relationship="CREATE">
+      <point x="105.0" y="-15.0" />
+      <point x="752.0" y="1658.4791319507221" />
+      <point x="1094.1014351632168" y="1658.4791319507221" />
+      <point x="1094.1014351632168" y="2091.0" />
+      <point x="1.6612211538813426E-4" y="-744.0" />
+    </edge>
+    <edge source="game.Game" target="game.Pokemon" relationship="CREATE">
+      <point x="-14.045550847457434" y="-513.0" />
+      <point x="821.0" y="2322.0" />
+      <point x="821.0" y="2388.2379975188433" />
+      <point x="1161.308" y="2388.2379975188433" />
+      <point x="1.6612211538813426E-4" y="-744.0" />
+    </edge>
+    <edge source="game.Controller" target="game.Pokemon" relationship="TO_ONE">
+      <point x="-3.248587569260053E-4" y="-183.0" />
+      <point x="553.19" y="3567.293139293139" />
+      <point x="1057.308" y="3567.293139293139" />
+      <point x="-103.99983387788461" y="0.0" />
+    </edge>
+    <edge source="game.Game" target="game.Board" relationship="CREATE">
+      <point x="-140.04555084745743" y="-513.0" />
+      <point x="540.7327371905664" y="2322.0" />
+      <point x="540.7327371905664" y="2183.5362525987525" />
+      <point x="540.4816229717478" y="2183.5362525987525" />
+      <point x="52.48162297174781" y="113.68187443505985" />
+    </edge>
+    <edge source="game.Game" target="game.Player" relationship="CREATE">
+      <point x="18.954449152542566" y="-513.0" />
+      <point x="662.0" y="1870.6543283582089" />
+      <point x="13.947174782111233" y="159.6543283582089" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Player" relationship="DEPENDENCY">
+      <point x="117.99971186440689" y="0.0" />
+      <point x="654.737" y="4007.2181258166884" />
+      <point x="1282.808" y="4007.2181258166884" />
+      <point x="1282.808" y="1564.0821438974658" />
+      <point x="647.0" y="1564.0821438974658" />
+      <point x="0.0" y="161.0" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Controller" relationship="DEPENDENCY">
+      <point x="16.453036723163905" y="-39.5" />
+      <point x="0.0" y="183.0" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Board" relationship="DEPENDENCY">
+      <point x="-118.0" y="15.0" />
+      <point x="9.5" y="4002.5" />
+      <point x="9.5" y="2038.0" />
+      <point x="-148.5" y="-15.0" />
+    </edge>
+    <edge source="game.Controller.GameListener" target="game.Controller" relationship="INNER_CLASS">
+      <point x="-15.00028813559311" y="-39.5" />
+      <point x="-31.453324858757014" y="183.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.065009940357852" showDependencies="true" x="941.5152376378187" y="1932.8949038641033" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
